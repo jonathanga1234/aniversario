@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Feliz 3 años de casados Génesis</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@300;400;600&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            romantic: {
+              50: '#fff5f7',
+              100: '#ffeef2',
+              200: '#ffd6e0',
+              300: '#ffafc3',
+              400: '#ff789b',
+              500: '#f84a7a',
+              gold: '#D4AF37',
+              'gold-light': '#F9F4E8'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            mono: ['"Fira Code"', 'monospace'],
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'fade-in-up': 'fadeInUp 1.2s ease-out forwards',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-animations">
+    .glass-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px 0 rgba(212, 175, 55, 0.1);
+    }
+
+    .heart-particle {
+      position: absolute;
+      pointer-events: none;
+      animation: heartFloat 15s linear infinite;
+      opacity: 0.3;
+    }
+
+    @keyframes heartFloat {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10% { opacity: 0.4; }
+      90% { opacity: 0.4; }
+      100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, #fff5f7 0%, #ffeef2 50%, #f9f4e8 100%);
+    }
+
+    .hidden-modal {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .visible-modal {
+      display: flex;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased overflow-x-hidden">
+<!-- BEGIN: Floating Background Elements -->
+<div class="fixed inset-0 z-0 overflow-hidden pointer-events-none" id="particles-container">
+<!-- Hearts will be injected here via JS -->
+</div>
+<!-- END: Floating Background Elements -->
+<main class="relative z-10 min-h-screen hero-gradient">
+<!-- BEGIN: Hero Section -->
+<section class="relative flex flex-col items-center justify-center min-h-screen px-6 text-center pt-20">
+<div class="max-w-4xl mx-auto space-y-8 animate-fade-in-up">
+<span class="inline-block px-4 py-1 mb-4 text-sm font-semibold tracking-widest uppercase border-b-2 border-romantic-gold text-romantic-gold">
+          Nuestras Bodas de Cuero
+        </span>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-serif text-gray-900 leading-tight">
+          Feliz 3 años de casados <br/>
+<span class="text-romantic-500 italic">Génesis</span>
+</h1>
+<p class="text-xl md:text-2xl text-gray-600 font-light max-w-2xl mx-auto leading-relaxed">
+          Gracias por estos años de amor. Hoy celebramos nuestro aniversario. 
+          Tres años caminando juntos, creciendo juntos y construyendo nuestra historia.
+        </p>
+<div class="pt-10 flex justify-center">
+<svg class="w-12 h-12 text-romantic-300 animate-bounce" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.48 8.48-8.48-8.48a6 6 0 0 1 8.48-8.48l.35.35.35-.35z"></path>
+</svg>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Gallery & Quote Section -->
+<section class="py-24 px-6 relative">
+<div class="max-auto max-w-7xl">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<!-- Image Section -->
+<div class="relative group" data-purpose="romantic-visual">
+<div class="absolute -inset-4 bg-romantic-gold/20 rounded-2xl blur-lg transition group-hover:blur-xl"></div>
+<div class="relative overflow-hidden rounded-2xl shadow-2xl">
+<img alt="Romantic scene" class="w-full h-[600px] object-cover transform transition duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ7nzR6__T5Bj13TeYElXLddHf5zywml8zO0UOtsgRoQmL_Ebe0ihecy_ln4m5cgUG4vyGNViCibqyq0CLYMn8Qjj4lUvd80OwjTJPD74f4p97AzgU4JEivWuE5NH4rnaiBhnHDzVu3sKe79DvZpwGKb4lyl--mDWQxa97I5tugbKOuzCpdH65wHRFWHeav9Lh_1RjeMz_iqkhW0bRLWVwCoX1gZw-P5oFgF_3NH2z90k92FUFneQOXGxnApQMvZyvmhEodiPvCzeQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-romantic-gold/40 to-transparent"></div>
+</div>
+</div>
+<!-- Engineer Quote Section -->
+<div class="space-y-12">
+<div class="glass-card p-10 md:p-12 rounded-3xl border-romantic-200" data-purpose="engineer-quote">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-3 h-3 rounded-full bg-red-400"></div>
+<div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+<div class="w-3 h-3 rounded-full bg-green-400"></div>
+</div>
+<blockquote class="font-mono text-lg md:text-xl text-gray-700 leading-relaxed">
+<span class="text-blue-500">const</span> marriage = {<br/>
+                  years: <span class="text-pink-500">3</span>,<br/>
+                  love: <span class="text-pink-500">Infinity</span>,<br/>
+                  status: <span class="text-green-600">'perfect'</span><br/>
+                };<br/><br/>
+<span class="italic text-gray-500">// "Soy ingeniero y escribo mucho código… pero el mejor proyecto de mi vida es nuestro matrimonio ❤️"</span>
+</blockquote>
+</div>
+<!-- CTA Section -->
+<div class="text-center lg:text-left">
+<button class="group relative inline-flex items-center justify-center px-10 py-5 font-serif text-xl font-bold tracking-wide text-white transition-all duration-200 bg-romantic-500 rounded-full hover:bg-romantic-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-romantic-500 shadow-xl" onclick="showModal()">
+                ¿Seguimos juntos toda la vida?
+                <svg class="w-6 h-6 ml-3 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Gallery & Quote Section -->
+<!-- BEGIN: Footer Message -->
+<footer class="py-12 px-6 text-center">
+<p class="font-serif text-romantic-gold italic text-lg">
+        Con todo mi amor, para siempre.
+      </p>
+</footer>
+<!-- END: Footer Message -->
+</main>
+<!-- BEGIN: Confirmation Modal -->
+<div class="hidden-modal fixed inset-0 z-50 items-center justify-center p-4 bg-black/60 backdrop-blur-sm" id="loveModal">
+<div class="bg-white rounded-3xl p-8 md:p-12 max-w-lg w-full text-center shadow-2xl relative overflow-hidden">
+<!-- Decorative background -->
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-romantic-100 rounded-full blur-3xl opacity-50"></div>
+<div class="relative z-10">
+<div class="text-6xl mb-6 animate-pulse-slow">💍</div>
+<h2 class="text-3xl md:text-4xl font-serif mb-4 text-gray-900">¡SÍ, Mil veces SÍ!</h2>
+<p class="text-gray-600 text-lg mb-8">
+          No hay nada que me haga más feliz que seguir escribiendo este código de vida a tu lado, Génesis. Eres mi mejor 'commit' y mi amor eterno.
+        </p>
+<button class="px-8 py-3 bg-romantic-gold text-white font-semibold rounded-full hover:bg-romantic-gold/90 transition shadow-lg" onclick="hideModal()">
+          Te amo ❤️
+        </button>
+</div>
+</div>
+</div>
+<!-- END: Confirmation Modal -->
+<!-- BEGIN: Scripts -->
+<script data-purpose="particle-system">
+    // Generates floating hearts in the background
+    function createHearts() {
+      const container = document.getElementById('particles-container');
+      const heartSymbols = ['❤️', '💖', '✨', '🌸'];
+      
+      for (let i = 0; i < 20; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart-particle';
+        heart.innerText = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+        
+        // Random positioning and timing
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        heart.style.animationDelay = (Math.random() * 5) + 's';
+        heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        
+        container.appendChild(heart);
+      }
+    }
+    
+    window.addEventListener('load', createHearts);
+  </script>
+<script data-purpose="ui-interactions">
+    function showModal() {
+      const modal = document.getElementById('loveModal');
+      modal.classList.remove('hidden-modal');
+      modal.classList.add('visible-modal');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function hideModal() {
+      const modal = document.getElementById('loveModal');
+      modal.classList.remove('visible-modal');
+      modal.classList.add('hidden-modal');
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+<!-- END: Scripts -->
+</body></html>
